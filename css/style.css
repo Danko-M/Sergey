@@ -1,0 +1,285 @@
+
+
+/* font-family: "OfficinaSerifBold"; */
+@font-face {
+  font-family: "OfficinaSerifBook";
+  src: url("fonts/OfficinaSerifBold/OfficinaSerifBold.eot");
+  src: url("fonts/OfficinaSerifBold/OfficinaSerifBold.eot?#iefix") format("embedded-opentype"),
+  url("fonts/OfficinaSerifBold/OfficinaSerifBold.woff") format("woff"),
+  url("fonts/OfficinaSerifBold/OfficinaSerifBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+body {
+  font-family: 'OfficinaSerifBook';
+}
+a:hover {
+  text-decoration: underline;
+}
+.navbar {
+  min-height: 60px;
+  background: #333;
+  color: #fff;
+  margin-bottom: 500px;
+}
+.navbar .container {
+  width: auto;
+}
+.container>.navbar-header {
+  text-align: center;
+  padding-bottom: 7px;
+}
+.navbar-brand {
+  float: none; 
+  padding: 15px 0;
+  font-size: 16px; 
+}
+.navbar-brand>img {
+  display: none;
+}
+.navbar-header .fa {
+  position: relative;
+  top: 2px;
+  left: 10px;
+  font-size: 26px;
+  color: #EF3840;
+}
+.navbar-default {
+  border: none;
+}
+.navbar-default .navbar-toggle {
+  top: 3px;
+  float: none;
+  margin: 8px 0 8px -10px;
+  border-color: transparent;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #333;
+} 
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover .icon-bar {
+  /*background-color: #333;*/
+}
+.navbar-default .navbar-toggle .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+  width: 20px;
+  height: 3px;
+  background-color: #ef3840;
+  border-radius: 0;
+}
+.navbar-default .navbar-brand, 
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover {
+  color: #c4c4c4;
+}
+.navbar-default .navbar-nav>.active>a {
+  background-color: transparent;
+  color: #39c0cb;
+}
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  background-color: transparent;
+  color: #c4c4c4;
+}
+.navbar-right {
+  text-align: right;
+  padding-right: 15px;
+}
+
+/*    footer           */
+.social {
+  display: none;
+}
+.footer-moto {
+  width: 250px;
+}
+.footer-moto a {
+  display: block;
+  height: 48px;
+  padding-top: 5px;
+  padding-left: 100px;
+  background: url(../img/sprite.png) no-repeat 0px 0px;
+  overflow: auto;
+}
+.footer-moto a:hover {
+  background-position: 0 -48px;
+}
+.btn-to-desktop {
+  display: block;
+  margin: 30px 0 50px 0;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid #c6c6c6;
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    min-height: 80px;
+  }
+  .navbar {
+    border-radius: 0; 
+    padding-top: 15px;
+    padding-bottom: 3px;
+  }
+  .navbar-brand>img {
+    display: block;
+    float: left;
+  }
+  .navbar>.container .navbar-brand {
+    margin-left: 0;
+    text-align: left;
+  }
+  .moto {
+    position: relative;
+    top: 5px; 
+    left: 10px;
+    max-width: 150px;
+    display: inline-block;
+  }
+  .navbar-right>li {
+    float: none;
+  }
+  .footer-moto, .copy {
+    float: left;
+  }
+  .btn-to-desktop {
+    display: none;
+  }
+  .copy {
+    width: 300px;
+    text-align: center;
+  }
+  .social { 
+    display: block;
+    float: right;
+    width: 150px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .social li {
+    float: left;
+    margin-left: 10px;
+  }
+  .social .fa {
+    font-size: 28px;
+  }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+  .navbar .container {
+    width: 970px;
+  }
+  .navbar-nav {
+    font-size: 18px;
+  }
+  .navbar-right {
+    /*margin-top: -5px;*/
+    padding-right: 0;
+    font-size: 16px;
+  }
+  .copy {
+    width: 500px;
+  }
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+  .navbar .container {
+    width: 1170px;
+  }
+  .moto {
+    margin-right: 80px;
+  }
+  .navbar-right {
+    margin-top: -10px;
+  }
+  .phone-num {
+    font-size: 24pt;
+  }
+  .copy {
+    width: 700px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .navbar .container {
+    width: 1370px;
+  }
+
+/*  .navbar-nav {
+    font-size: 20pt;
+  }*/
+  .moto {
+    top: 0;
+    max-width: 210px;
+    font-size: 20pt;
+    line-height: 1;
+  }
+  .navbar-right {
+    font-size: 16px;
+    /*margin-top: -15px;*/
+  }
+  .phone-num {
+    /*font-size: 28pt;*/
+  }
+  .copy {
+    width: 750px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1199px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 991px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 767px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 479px) {}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 319px) {}
