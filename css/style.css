@@ -296,8 +296,8 @@ p:hover i.fa-chevron-right {
 .hero-content-wrapper {
   margin: 120px 0 70px 0;
 }
-.font-xl .sn-pxg U.pxg-set {
-  height: 20px;
+.font-xl.gradient-01  {
+  height: 30px ;
 }
 .curved-links-container {
   background: #fff;
@@ -323,7 +323,63 @@ p:hover i.fa-chevron-right {
   margin-left: -30px;
 }
 /* ----------------- */
-.media-01 {margin-bottom: 35px;}
+.media-01 {
+  margin-bottom: 35px;
+}
+a.col-xs-4 {
+  color: #333;
+  margin-bottom: 80px;
+}
+a.col-xs-4:hover {
+  text-decoration: none;
+  color: #1ba7b8;
+}
+.videozapis span,
+.prezentacija span,
+.svideteljstvo span {
+  display: block;
+  margin: 100px auto 25px;
+  height: 100px;
+  background: url(../img/sprites-02.png);
+}
+.videozapis span{
+  width: 81px;
+  height: 87px;
+  background-position: 0 0;
+}
+.videozapis:hover span {
+  background-position: 0 -89px;  
+}
+.prezentacija span {
+  width: 90px;
+  height: 89px;
+  background-position: -81px 0;
+}
+.prezentacija:hover span {
+  background-position: -81px -89px;  
+}
+.svideteljstvo span {
+  width: 75px;
+  height: 86px;
+  background-position: -171px 0;  
+}
+.svideteljstvo:hover span {
+  background-position: -171px -89px;
+}
+.btn-blue {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #2ec0cd;
+  padding: 10px;
+  color: #2ec0cd;
+  font-family: 'OfficinaSerifBook';
+}
+.btn-blue:hover {
+  color: #2ec0cd;
+}
+
+
 
 /*  map */
 .map {
@@ -510,6 +566,14 @@ p:hover i.fa-chevron-right {
     padding-right: 30px;
   }
   .udalenoe {
+    min-height: 700px;
+  }
+  .img-mobile {
+    position: relative;
+    top: 100px;
+    margin-bottom: 200px;
+  }
+  .udalenoe .col-sm-offset-6 {
     position: absolute;
   }
   /* ---------------*/
