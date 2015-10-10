@@ -17,11 +17,34 @@ body {
 a:hover {
   text-decoration: underline;
 }
+ul {
+  padding: 0;
+  margin: 0;  
+}
+.no-p {
+  padding: 0;
+}
+.container-fluid, .container, .row {
+  position: relative;
+}
+.txt-blue {
+  color: #2ec0cd;
+}
+.txt-orange {
+  color: #f64e21;
+}
+.txt-red {
+  color: #f33439;
+}
+/* -----------------------------------
+*           === HEADER ===
+ -----------------------------------*/
+
 .navbar {
   min-height: 60px;
   background: #333;
   color: #fff;
-  margin-bottom: 500px;
+  margin-bottom: 0;
 }
 .navbar .container {
   width: auto;
@@ -58,10 +81,6 @@ a:hover {
 .navbar-default .navbar-toggle:hover {
   background-color: #333;
 } 
-.navbar-default .navbar-toggle:focus, 
-.navbar-default .navbar-toggle:hover .icon-bar {
-  /*background-color: #333;*/
-}
 .navbar-default .navbar-toggle .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar {
   width: 20px;
@@ -92,8 +111,25 @@ a:hover {
   text-align: right;
   padding-right: 15px;
 }
+/* -----------------------------------
+*           === HERO ===
+ -----------------------------------*/
+.hero {
+  background: url(../img/big-01.jpg) no-repeat left center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 300px;
+}
+.hero-content-wrapper {
+  position: relative;
+  top: 50px;
+}
+/* -----------------------------------
+*           === FOOTER ===
+ -----------------------------------*/
 
-/*    footer           */
 .social {
   display: none;
 }
@@ -105,7 +141,7 @@ a:hover {
   height: 48px;
   padding-top: 5px;
   padding-left: 100px;
-  background: url(../img/sprite.png) no-repeat 0px 0px;
+  background: url(../img/sprites.png) no-repeat 0px 0px;
   overflow: auto;
 }
 .footer-moto a:hover {
@@ -138,11 +174,14 @@ a:hover {
   .navbar {
     border-radius: 0; 
     padding-top: 15px;
-    padding-bottom: 3px;
+    /*padding-bottom: 3px;*/
   }
   .navbar-brand>img {
     display: block;
     float: left;
+  }
+  .container>.navbar-header {
+    padding-bottom: 0;
   }
   .navbar>.container .navbar-brand {
     margin-left: 0;
@@ -157,6 +196,9 @@ a:hover {
   }
   .navbar-right>li {
     float: none;
+  }
+  .navbar-nav>li> .email {
+    padding: 0;
   }
   .footer-moto, .copy {
     float: left;
@@ -226,13 +268,10 @@ a:hover {
   }
 }
 @media only screen and (min-width: 1400px) {
-  .navbar .container {
+  .navbar .container,
+  .container  {
     width: 1370px;
   }
-
-/*  .navbar-nav {
-    font-size: 20pt;
-  }*/
   .moto {
     top: 0;
     max-width: 210px;
@@ -241,10 +280,6 @@ a:hover {
   }
   .navbar-right {
     font-size: 16px;
-    /*margin-top: -15px;*/
-  }
-  .phone-num {
-    /*font-size: 28pt;*/
   }
   .copy {
     width: 750px;
