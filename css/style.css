@@ -37,6 +37,9 @@ ol > li {
 .container-fluid, .container, .row {
   position: relative;
 }
+.static {
+  position: static;
+}
 .txt-white {
   color: #fff;
 }
@@ -128,6 +131,9 @@ ol > li {
   margin: 70px auto;
   color: #fff;
 }
+.strong {
+  font-weight: 700;
+}
 h1 span {
   display: block;
   text-shadow: 1px 1px 0px #fff;
@@ -202,13 +208,19 @@ p:hover i.fa-chevron-right {
   -moz-box-shadow: inset 5px 5px 31px -7px rgba(0,0,0,0.24);
   box-shadow: inset 5px 5px 31px -7px rgba(0,0,0,0.24);
 }
+.fa-angle-double-left,
+.fa-angle-double-right,
 .rounded-number {
   margin: 0 auto;
   border: 1px solid #fff;
   border-radius: 50%;
   width: 32px;
   text-align: center;
-  line-height: 30px;
+  line-height: 30px !important;
+}
+.fa-angle-double-left,
+.fa-angle-double-right {
+  cursor: pointer;
 }
 
 /* -----------------------------------
@@ -296,8 +308,12 @@ p:hover i.fa-chevron-right {
 .hero-content-wrapper {
   margin: 120px 0 70px 0;
 }
-.font-xl.gradient-01  {
-  height: 30px ;
+.gradient-01 {
+  display: table;
+  color: #e9374b;
+  background: -webkit-linear-gradient(left,#e9374b, #fd6020);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .curved-links-container {
   background: #fff;
@@ -306,6 +322,7 @@ p:hover i.fa-chevron-right {
 .curved-link-holder-01,
 .curved-link-holder-02,
 .curved-link-holder-03 {
+  position: relative;
   padding: 10px;
 }
 .curved-link-holder-01 {
@@ -317,6 +334,8 @@ p:hover i.fa-chevron-right {
 .curved-links-container a {
   color: #333;
 }
+
+
 .img-mobile {
   width: 100%;
   max-width: 695px;
@@ -366,7 +385,9 @@ a.col-xs-4:hover {
 .svideteljstvo:hover span {
   background-position: -171px -89px;
 }
-.btn-blue {
+
+.btn-blue,
+.btn-red {
   display: block;
   width: 100%;
   max-width: 300px;
@@ -378,12 +399,65 @@ a.col-xs-4:hover {
 .btn-blue:hover {
   color: #2ec0cd;
 }
+.btn-red {
+  margin: 0 auto;
+  border: 2px solid #f33439;
+  color: #f33439;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+.btn-red:hover {
+  color: #f33439;
+} 
+.icon {
+  background: url(../img/sprites.png) no-repeat;
+  display: block;
+}
+.icon-sale,
+.icon-comp {
+  position: absolute;
+  display: none;
 
-
+}
+.icon-sale {
+  right: 10px;
+  width: 26px;
+  height: 35px;
+  bottom: 15px;
+  background-position: 0 -96px;
+}
+.icon-comp {
+  left: 10px;
+  bottom: 22px;
+  width: 30px;
+  height: 22px;
+  background-position: -28px -96px;
+}
+.icon-clock {
+  width: 21px;
+  height: 21px;
+  background-position: -47px -136px;
+}
+.icon-ribbon {
+  width: 22px;
+  height: 40px;
+  background-position: -58px -96px;
+}
+.icon-mapmarker {
+  width: 16px;
+  height: 21px;
+  background-position: -31px -129px;  
+}
+.icon-phone {
+  width: 17px;
+  height: 23px;
+  background-position: -69px -137px;  
+}
 
 /*  map */
 .map {
   min-height: 300px;
+  margin-top: 60px;
   background: url(../img/map.jpg) center center;
 }
 /*form*/
@@ -403,7 +477,12 @@ a.col-xs-4:hover {
   margin-right: auto;
   font-family: 'OfficinaSerifBook';
 }
-
+.centered-box input[type="text"]:focus,
+.centered-box input[type="email"]:focus,
+.centered-box input[type="submit"]:focus,
+.centered-box textarea:focus {
+  background-color: rgba(255,255,255,0.3);
+}
 /*    */
 /* cards */
 .cards {
@@ -562,6 +641,10 @@ a.col-xs-4:hover {
     display: inline-block;
     margin-top: 20px;
   }
+  .icon-sale,
+  .icon-comp {
+    display: block;
+  }
   .media-left {
     padding-right: 30px;
   }
@@ -575,6 +658,13 @@ a.col-xs-4:hover {
   }
   .udalenoe .col-sm-offset-6 {
     position: absolute;
+  }
+  .map {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: 0;
   }
   /* ---------------*/
   .footer-moto, .copy {
