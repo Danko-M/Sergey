@@ -17,7 +17,9 @@ body,
 }
 .navbar,
 h1, h2, h3, h4,
-.font-2 {
+.font-2,
+.card-title,
+.card-date {
   font-family: 'OfficinaSerifBook';
 }
 a:hover {
@@ -33,6 +35,11 @@ ol > li {
 }
 .no-p {
   padding: 0;
+}
+.no-side-p,
+.no-side-p-mob {
+  padding-left: 0;
+  padding-right: 0;
 }
 .container-fluid, .container, .row {
   position: relative;
@@ -52,11 +59,26 @@ ol > li {
 .txt-red {
   color: #f33439;
 }
+.bg-white {
+  background-color: #fff;
+}
+.bg-blue {
+  background-color: #2ec0cd;
+}
+.bg-orange {
+  background-color: #f64e21;
+}
+.bg-red {
+  background-color: #eb5f43;
+}
 .bgcol-01 {
   background: #f3f3f3;
 }
 .bgcol-02 {
   background: #ececec;
+}
+.bgcol-03 {
+  background: #3c3c3c;
 }
 .transparent-bg {
   background: transparent;
@@ -77,6 +99,27 @@ ol > li {
 }
 .bg-img-04 {
   background-image: url(../img/big-05.jpg);
+}
+.bg-img-10 {
+  background-image: url(../img/img-01.jpg);
+}
+.bg-img-11 {
+  background-image: url(../img/img-02.jpg);
+}
+.bg-img-12 {
+  background-image: url(../img/img-04.jpg);
+}
+.bg-img-13 {
+  background-image: url(../img/img-05.jpg);
+}
+.bg-img-14 {
+  background-image: url(../img/img-06.jpg);
+}
+.bg-img-15 {
+  background-image: url(../img/img-07.jpg);
+}
+.bg-img-16 {
+  background-image: url(../img/img-08.jpg);
 }
 .font-xl {
   font-size: 26px;
@@ -223,6 +266,66 @@ p:hover i.fa-chevron-right {
   cursor: pointer;
 }
 
+.list-card {
+  position: relative;
+  min-height: 350px;
+  padding-top: 15px;  
+  padding-bottom: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  border: 15px solid #f3f3f3;
+  border-bottom-width: 0;
+  overflow: hidden;
+}
+.card-label,
+.card-label-blue,
+.card-label-blue-bordered,
+.card-label-red-bordered {
+  display: table;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 1px 5px 0px 5px;
+  margin-bottom: 30px;
+  background: #f44e2d;
+  color: #fff;
+  font-family: 'OfficinaSerifBook';
+}
+.card-label-blue {
+  background: #2ec0cd;
+}
+.card-label-blue-bordered,
+.card-label-red-bordered {
+  background: #2ec0cd;
+  border: 1px solid #fff;
+  padding: 0 4px;
+}
+.card-label-red-bordered {
+  background-color: #eb5f43;
+}
+.card-title {
+  font-size: 20px;
+  padding: 10px 0;
+}
+.card-date {
+  font-size: 14px;
+}
+.card-person {
+  margin: 20px 0;
+}
+.content-to-bottom {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  left: 15px;
+}
+.card-aside img {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin: 20px auto;
+}
 /* -----------------------------------
 *           === HEADER ===
  -----------------------------------*/
@@ -297,6 +400,31 @@ p:hover i.fa-chevron-right {
 .navbar-right {
   text-align: right;
   padding-right: 15px;
+}
+
+/* SUBNAV*/
+
+.subnav li {
+  color: inherit;
+}
+.search-wrapper {
+  position: relative;
+  max-width: 325px;
+  margin: 10px 0 15px 0;
+}
+.search-wrapper .fa {
+  position: absolute;
+  right: 16px;
+  top: 14px;
+  color: #8a8a8a;
+}
+.search-wrapper input[type="search"] {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background-color: #d6d6d6;
+  border: none;
+
 }
 /* -----------------------------------
 *           === HERO ===
@@ -453,7 +581,13 @@ a.col-xs-4:hover {
   height: 23px;
   background-position: -69px -137px;  
 }
-
+.icon-film {
+  position: relative;
+  top: 5px;
+  width: 30px;
+  height: 28px;
+  background-position: -28px -160px;  
+}
 /*  map */
 .map {
   min-height: 300px;
@@ -484,11 +618,11 @@ a.col-xs-4:hover {
   background-color: rgba(255,255,255,0.3);
 }
 /*    */
-/* cards */
-.cards {
+/* thumbnails */
+.thumbnails {
   padding: 60px 0;
 }
-.cards img {
+.thumbnails img {
   display: block;
   width: 100%;
   max-width: 310px;
@@ -584,6 +718,12 @@ a.col-xs-4:hover {
   .navbar-nav>li> .email {
     padding: 0;
   }
+  .search-wrapper {
+    margin: 10px 0 10px -10px;
+  }
+  .search-wrapper .fa {
+    display: none;
+  }
   /* ---------------*/
   .hero-content-wrapper {
     margin: 200px 0 200px 0;
@@ -666,6 +806,21 @@ a.col-xs-4:hover {
     bottom: 0;
     margin-top: 0;
   }
+  /* --------------- */
+  
+  .seminar-list {
+    padding: 10px 5px;
+  }
+
+  .list-card {
+    border-width: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 540px;
+  }
+  .card-aside {
+    min-height: 1080px;
+  }
   /* ---------------*/
   .footer-moto, .copy {
     float: left;
@@ -692,6 +847,10 @@ a.col-xs-4:hover {
   .social .fa {
     font-size: 28px;
   }
+  .no-side-p-mob {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 
@@ -711,12 +870,23 @@ a.col-xs-4:hover {
     font-size: 18px;
   }
   .navbar-right {
-    /*margin-top: -5px;*/
     padding-right: 0;
     font-size: 16px;
   }
   .curved-links-container {
     font-size: 16px;
+  }
+  .seminar-list .col-sm-8 {
+    padding-right: 33%;
+  }
+  .seminar-list .col-sm-6 {
+    padding-right: 25%;
+  }
+  .list-card {
+    min-height: 490px;
+  }
+  .card-aside {
+    min-height: 980px;
   }
   .copy {
     width: 560px;
@@ -740,6 +910,15 @@ a.col-xs-4:hover {
     font-size: 24pt;
     margin-bottom: -15px;
   }
+  .subnav {
+    padding-top: 15px;
+  }
+  .search-wrapper {
+    top: -7px;
+  }
+  .search-wrapper .fa {
+    display: block;
+  }
   .headphones {
     background: url(../img/headphones.png) no-repeat ;
     margin-top: -70px;
@@ -748,6 +927,12 @@ a.col-xs-4:hover {
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
+  }
+  .list-card {
+    min-height: 420px;
+  }
+  .card-aside {
+    min-height: 840px;
   }
   .copy {
     width: 760px;
@@ -758,8 +943,11 @@ a.col-xs-4:hover {
     overflow-x: hidden;
   }
   .navbar .container,
-  .container  {
+  .container {
     width: 1370px;
+  }
+  .seminar-list {
+    /*width: 1390px;*/
   }
   .moto {
     top: 0;
@@ -769,6 +957,15 @@ a.col-xs-4:hover {
   }
   .navbar-right {
     font-size: 16px;
+  }
+  .subnav ul {
+    margin-top: 10px;
+  }
+  .list-card {
+    min-height: 370px;
+  }
+  .card-aside {
+    min-height: 740px;
   }
   .copy {
     width: 960px;
