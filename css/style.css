@@ -674,7 +674,7 @@ a.col-xs-4:hover {
     display: none;
   }
   .copy {
-    width: 300px;
+    width: 330px;
     text-align: center;
   }
   .social { 
@@ -719,7 +719,7 @@ a.col-xs-4:hover {
     font-size: 16px;
   }
   .copy {
-    width: 500px;
+    width: 560px;
   }
 }
 
@@ -750,10 +750,13 @@ a.col-xs-4:hover {
     background-size: 100%;
   }
   .copy {
-    width: 700px;
+    width: 760px;
   }
 }
 @media only screen and (min-width: 1400px) {
+  body {
+    overflow-x: hidden;
+  }
   .navbar .container,
   .container  {
     width: 1370px;
@@ -768,7 +771,7 @@ a.col-xs-4:hover {
     font-size: 16px;
   }
   .copy {
-    width: 750px;
+    width: 960px;
   }
 }
 
