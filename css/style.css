@@ -449,7 +449,8 @@ p:hover i.fa-chevron-right {
 .subnav li {
   color: inherit;
 }
-.search-wrapper {
+.search-wrapper,
+.email-wrapper {
   position: relative;
   max-width: 325px;
   margin: 10px 0 15px 0;
@@ -460,7 +461,8 @@ p:hover i.fa-chevron-right {
   top: 14px;
   color: #8a8a8a;
 }
-.search-wrapper input[type="search"] {
+.search-wrapper input[type="search"],
+.email-wrapper input[type="email"]{
   display: inline-block;
   width: 100%;
   padding: 10px;
