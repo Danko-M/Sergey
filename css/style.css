@@ -354,12 +354,15 @@ p:hover i.fa-chevron-right {
   height: auto;
   margin: 20px auto;
 }
+.media {
+  min-height: 40px;
+}
 .card-aside .media-body,
-.main-container .media-body {
+.main-07 .media-body {
   border-bottom: 1px solid #dadada;
 }
 .card-aside .media:last-child .media-body,
-.main-container .media:last-child .media-body {
+.main-07 .media:last-child .media-body {
   border-bottom: none;
 }
 .carousel-control.left, .carousel-control.right {
@@ -693,6 +696,85 @@ a.col-xs-4:hover {
   display: none;
   border-right: 1px dotted #333;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .main-container {
+   padding-bottom: 30px;
+ }
+ 
+ .main-01 img {
+   width: 100%;
+   max-width: 350px;
+   height: auto;
+ }
+ 
+ .main-02 {
+   background-color: #2ec0cd;
+ }
+ 
+ .main-03 {
+   background-image: url(../img/women.png);
+ }
+ 
+ .main-06 {
+   background-image: url(../img/video-player-mask.jpg);
+ }
+ 
+ .main-09 {
+   background-image: url(../img/inst-02.jpg);
+ }
+ 
+ .main-10 {
+   background: #3c3c3c url(../img/compass-02.png) no-repeat right bottom;
+   padding-bottom: 200px;
+ }
+ 
+ .main-11 {
+   background-image: url(../img/meetings-02.jpg);
+ }
+ 
+ .main-01,
+ .main-02,
+ .main-03,
+ .main-04,
+ .main-05,
+ .main-06,
+ .main-07,
+ .main-08,
+ .main-09,
+ .main-10,
+ .main-11  {
+   height: auto;
+   min-height: 350px;
+ }
+
+ .main-06 a,
+ .main-09 a {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   display: block;
+ }
 /*  */
 /* -----------------------------------
 *           === FOOTER ===
@@ -728,7 +810,9 @@ a.col-xs-4:hover {
   text-align: center;
   border: 1px solid #c6c6c6;
 }
-
+.social a {
+  color: #c4c4c4;
+}
 /* Custom, iPhone Retina */
 
 @media only screen and (min-width: 320px) {}
@@ -925,6 +1009,55 @@ a.col-xs-4:hover {
   .carousel-caption .txt-blue {
     font-size: 30px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .main-container [class^="col"] {
+     overflow: hidden;
+   }
+   .main-01,
+   .main-02,
+   .main-03,
+   .main-04,
+   .main-05,
+   .main-06,
+   .main-07,
+   .main-08,
+   .main-09,
+   .main-11 {
+     height: 300px;
+     position: relative;
+   }
+   .main-10 {
+     height: 1050px;
+     padding-bottom: 15px;
+   }
+
+   .main-10_01,
+   .main-10_03 {
+    position: relative;
+    height: 310px;
+
+   }
+   .main-10_02 {
+    position: relative;
+    height: 350px;
+   }
 }
 
 
@@ -965,8 +1098,56 @@ a.col-xs-4:hover {
   .copy {
     width: 560px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .bg-first-half,
+   .bg-second-half {
+     position: absolute;
+     width: 100%;
+     height: 1300px;
+     z-index: -1;
+   }
+   .bg-second-half {
+     top: 1280px;
+     height: 920px;
+     background-image: url(../img/bg-wood.jpg);
+   }
 }
 
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (min-width: 768px) and (max-width: 1199px) {
+   .main-01 p,
+   .main-01 img,
+   .main-02 p {
+     display: none;
+   }
+   .main-01 h3,
+   .main-02 h3 {
+     margin-top: 80px;
+   }
+ }
 
 /* Large Devices, Wide Screens */
 
@@ -1023,6 +1204,62 @@ a.col-xs-4:hover {
   .copy {
     width: 760px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .main-01,
+   .main-07 {
+     height: 600px;
+   }
+   .main-07 {
+     float: right;
+   }
+   .main-10 {
+     margin-top: -75px;
+     height: 1125px;
+   }
+   .main-10_01 {
+    height: 385px;
+   }
+   .main-10_01, 
+   .main-10_03 {
+    padding-right: 40px;
+   }
+   .main-10_02 {
+    padding-left: 60px;
+   } 
+   .doctor {
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+   }
+   .bear {
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+   }
 }
 @media only screen and (min-width: 1400px) {
   body {
@@ -1055,35 +1292,3 @@ a.col-xs-4:hover {
   }
 }
 
-
-
-
-
-
-
-
-
-
-/* Large Devices, Wide Screens */
-
-@media only screen and (max-width: 1199px) {}
-
-
-/* Medium Devices, Desktops */
-
-@media only screen and (max-width: 991px) {}
-
-
-/* Small Devices, Tablets */
-
-@media only screen and (max-width: 767px) {}
-
-
-/* Extra Small Devices, Phones */
-
-@media only screen and (max-width: 479px) {}
-
-
-/* Custom, iPhone Retina */
-
-@media only screen and (max-width: 319px) {}
