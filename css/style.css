@@ -37,7 +37,23 @@ ul > li,
 ol > li {
   line-height: 2;
 }
-
+.ruble {
+  width: 14px;
+}
+.ruble-sm {
+  width: 14px;
+  fill: #f33439 !important;
+  display: none;
+}
+.font-currency {
+  font-size: 20px;
+}
+.superscript {
+  font-size: 20px;
+  position: absolute;
+  top: 30px;
+  right: -25px;
+}
 .line-spacing-1-5 {
   line-height: 1.5;
 }
@@ -1221,6 +1237,9 @@ a.col-xs-4:hover {
     width: 100%;
     height: auto;
   }
+  .r-border {
+    border-right: 1px solid  #c7c7c7;
+  }
 }
 
 
@@ -1382,6 +1401,16 @@ a.col-xs-4:hover {
     top: 60px;
     max-width: 410px;
   }
+  .ucastie {
+    padding: 0 80px;
+  }
+  .ruble {
+    width: 20px;
+    margin-top: -6px;
+  }
+  .font-currency {
+    font-size: 35px;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -1425,6 +1454,9 @@ a.col-xs-4:hover {
   .notebooks {
     position: relative;
     right: -70px;
+  }
+  .ucastie {
+    padding: 0 140px;
   }
 }
 
