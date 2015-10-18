@@ -1,4 +1,11 @@
-/* font-family: "OfficinaSerifBold"; */
+/* 
+Author: Danko Milutinovic
+Desctiption: Stylesheet for the ШКОЛА ИГРОВОЙ ЛОГОПЕДИИ
+Contact:  
+        http://danko-m.github.io/ ,
+        dankomilutinovic@gmail.com, 
+        https://rs.linkedin.com/pub/danko-milutinovic/a3/675/778         
+*/
 
 @font-face {
   font-family: "OfficinaSerifBook";
@@ -37,23 +44,28 @@ ul > li,
 ol > li {
   line-height: 2;
 }
+
 .ruble {
   width: 14px;
 }
+
 .ruble-sm {
   width: 14px;
   fill: #f33439 !important;
   display: none;
 }
+
 .font-currency {
   font-size: 20px;
 }
+
 .superscript {
   font-size: 20px;
   position: absolute;
   top: 30px;
   right: -25px;
 }
+
 .line-spacing-1-5 {
   line-height: 1.5;
 }
@@ -329,12 +341,14 @@ p:hover i.fa-chevron-right {
 }
 
 .btn-orange-gradient {
-  display: block;
-  max-width: 280px;
+  float: left;
+  width: 260px;
   padding: 10px;
+  margin-right: 48px;
   text-align: center;
   color: #fff;
   font-family: 'OfficinaSerifBook';
+  font-size: 18px;
   background: rgba(248, 85, 40, 1);
   background: -moz-linear-gradient(top, rgba(248, 85, 40, 1) 0%, rgba(238, 64, 61, 1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248, 85, 40, 1)), color-stop(100%, rgba(238, 64, 61, 1)));
@@ -593,7 +607,7 @@ p:hover i.fa-chevron-right {
 .email-wrapper input[type="email"] {
   display: inline-block;
   width: 100%;
-  padding: 10px;
+  padding: 14px 10px;
   background-color: #d6d6d6;
   border: none;
 }
@@ -947,8 +961,73 @@ a.col-xs-4:hover {
   display: none;
 }
 
+.arrow {
+  background: url(../img/sprites-02.png) no-repeat;
+  display: inline-block;
+}
 
-/*  */
+.left-white-xl,
+.right-white-xl {
+  position: absolute;
+  top: 50%;
+  width: 34px;
+  height: 42px;
+  margin-top: -21px;
+  background-position: 0 -209px;
+}
+
+.right-white-xl {
+  background-position: -33px -209px;
+  margin-left: -15px;
+}
+
+.right-black-sm,
+.right-white-sm,
+.right-gray-sm,
+.right-orange-sm {
+  width: 11px;
+  height: 14px;
+  margin-left: 15px;
+  background-position: -60px -180px;
+}
+
+.right-white-sm {
+  background-position: -142px -180px;
+}
+
+.right-orange-sm {
+  background-position: -71px -180px;
+}
+
+.right-gray-sm {
+  position: absolute;
+  top: 18px;
+  right: 17px;
+  background-position: -82px -180px;
+}
+
+.orange-link-main {
+  font-size: 18px;
+  color: #f74d20;
+  font-family: 'OfficinaSerifBook';
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.orange-link-main:hover {
+  color: #f74d20;
+}
+
+.main-02:before {
+  content: "";
+  display: block;
+  margin: -10px auto 10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #2ec0cd;
+}
 
 
 /* -----------------------------------
@@ -1197,11 +1276,7 @@ a.col-xs-4:hover {
   .main-container h3 {
     padding-top: 0;
   }
-  .main-container [class^="col"] {
-    overflow: hidden;
-  }
   .main-01,
-  .main-02,
   .main-03,
   .main-04,
   .main-05,
@@ -1212,6 +1287,7 @@ a.col-xs-4:hover {
   .main-11 {
     height: 300px;
     position: relative;
+    overflow: hidden;
   }
   .main-10 {
     height: 1050px;
@@ -1238,7 +1314,10 @@ a.col-xs-4:hover {
     height: auto;
   }
   .r-border {
-    border-right: 1px solid  #c7c7c7;
+    border-right: 1px solid #c7c7c7;
+  }
+  .right-white-xl {
+    margin-left: 15px;
   }
 }
 
@@ -1288,7 +1367,7 @@ a.col-xs-4:hover {
     z-index: -1;
   }
   .bg-second-half {
-    top: 1378px;
+    top: 1380px;
     height: 920px;
     background-image: url(../img/bg-wood.jpg);
   }
@@ -1342,7 +1421,6 @@ a.col-xs-4:hover {
   .card-aside h2 {
     font-size: 40px;
   }
-
   .headphones {
     background: url(../img/headphones.png) no-repeat;
     margin-top: -70px;
