@@ -1029,7 +1029,92 @@ a.col-xs-4:hover {
   border-bottom: 10px solid #2ec0cd;
 }
 
+.modal .row {
+  overflow: hidden;
+}
 
+.modal-lt,
+.modal-rt {
+  padding: 50px 40px;
+  padding-bottom: 1000em;
+  margin-bottom: -1000em;
+}
+
+.modal-lt {
+  background: #2ec0cd;
+  color: #fff;
+}
+
+.modal-lt-bottom {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.modal-rt {
+  background: #eee;
+}
+
+.modal-intro {
+  margin-bottom: 30px;
+}
+
+.modal-lt-important-txt {
+  margin-top: -10px;
+  font-family: 'OfficinaSerifBook';
+  font-size: 32px;
+}
+
+.modal-dialog button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  z-index: 5;
+}
+
+.modal input,
+.modal textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #d6d6d6;
+  border: none;
+}
+
+.modal .btn-orange-gradient {
+  display: block;
+  float: none;
+  width: auto;
+  margin-right: 0;
+}
+
+.modal-rt-link {
+  display: block;
+  margin: 40px 0;
+  text-align: center;
+  color: #333;
+}
+
+.modal ::-webkit-input-placeholder:after {
+  content: " *";
+  color: #f00;
+}
+
+.modal ::-moz-placeholder:after {
+  content: " *";
+  color: #f00;
+}
+
+.modal :-ms-input-placeholder:after {
+  content: " *";
+  color: #f00;
+}
+
+.modal input:-moz-placeholder:after {
+  content: " *";
+  color: #f00;
+}
 /* -----------------------------------
 *           === FOOTER ===
  -----------------------------------*/
@@ -1374,8 +1459,20 @@ a.col-xs-4:hover {
   .women-xl {
     top: 60px;
   }
+  .modal-dialog {
+    width: 900px;
+    margin: 120px auto;
+  }
+  .modal-lt-bottom {
+    margin-top: 220px;
+  }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .modal-lt-important-txt {
+    font-size: 24px;
+  } 
+}
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .main-01 p,
   .main-01 img,
