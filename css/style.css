@@ -1096,22 +1096,22 @@ a.col-xs-4:hover {
   color: #333;
 }
 
-.modal ::-webkit-input-placeholder:after {
+.required ::-webkit-input-placeholder:after {
   content: " *";
   color: #f00;
 }
 
-.modal ::-moz-placeholder:after {
+.required ::-moz-placeholder:after {
   content: " *";
   color: #f00;
 }
 
-.modal :-ms-input-placeholder:after {
+.required :-ms-input-placeholder:after {
   content: " *";
   color: #f00;
 }
 
-.modal input:-moz-placeholder:after {
+.required input:-moz-placeholder:after {
   content: " *";
   color: #f00;
 }
