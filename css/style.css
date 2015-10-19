@@ -911,12 +911,14 @@ a.col-xs-4:hover {
 }
 
 .main-06 {
+  background-image: url(../img/video-player-mask-hover.jpg);
   background-image: url(../img/video-player-mask.jpg);
 }
 .main-06:hover {
   background-image: url(../img/video-player-mask-hover.jpg);
 }
 .main-09 {
+  background-image: url(../img/inst-02-hover.jpg);
   background-image: url(../img/inst-02.jpg);
 }
 .main-09:hover {
