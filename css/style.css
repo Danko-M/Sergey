@@ -913,11 +913,15 @@ a.col-xs-4:hover {
 .main-06 {
   background-image: url(../img/video-player-mask.jpg);
 }
-
+.main-06:hover {
+  background-image: url(../img/video-player-mask-hover.jpg);
+}
 .main-09 {
   background-image: url(../img/inst-02.jpg);
 }
-
+.main-09:hover {
+  background-image: url(../img/inst-02-hover.jpg);
+}
 .main-10 {
   background: #3c3c3c url(../img/compass-02.png) no-repeat right bottom;
   padding-bottom: 200px;
