@@ -339,7 +339,7 @@ p:hover i.fa-chevron-right {
   line-height: 2;
   font-weight: normal;
 }
-
+.modal input[type="submit"],
 .btn-orange-gradient {
   float: left;
   width: 260px;
@@ -358,13 +358,13 @@ p:hover i.fa-chevron-right {
   background: linear-gradient(to bottom, rgba(248, 85, 40, 1) 0%, rgba(238, 64, 61, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f85528', endColorstr='#ee403d', GradientType=0);
 }
-
 .btn-orange-gradient:hover,
 .btn-orange-gradient:focus {
   color: #fff;
   text-decoration: none;
 }
 
+.modal input[type="submit"]:hover,
 .btn-orange-gradient:hover {
   background: rgba(248, 85, 40, 1);
   background: -moz-linear-gradient(top, rgba(248, 85, 40, 1) 0%, rgba(243, 75, 52, 1) 51%, rgba(248, 93, 51, 1) 100%);
@@ -1088,10 +1088,10 @@ a.col-xs-4:hover {
   border: none;
 }
 
-.modal .btn-orange-gradient {
+.modal input[type="submit"] {
   display: block;
   float: none;
-  width: auto;
+  width: 100%;
   margin-right: 0;
 }
 
